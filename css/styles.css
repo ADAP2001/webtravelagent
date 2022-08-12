@@ -1,0 +1,520 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #fdd033;
+
+    --color-bg: #111111;
+    --color-bg1: #1c3d32;
+    --color-bg2: #41726e;
+
+    --color-white: #fff;
+    --color-black: #000;
+    --color-light: #f5f5f5;
+
+    --container-width-lg: 82%;
+    --container-width-md: 90%%;
+    --contaienr-width-sm: 96%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--color-black);
+}
+
+h1 {
+    font-size: 4.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+    ;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+.container {
+    width: var(--container-width-lg);
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0;
+    margin: 5rem 0;
+}
+
+.btn {
+    background-color: var(--color-black);
+    color: var(white);
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 120px;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+}
+
+.btn-primary a {
+    color: var(--color-black);
+    font-weight: 800;
+}
+
+.btn__custom {
+    color: var(--color-black);
+    background: transparent;
+}
+
+.btn__contect i {
+    margin-left: 1rem;
+}
+
+.btn__contect1 i {
+    margin-right: 1rem;
+}
+
+.btn__contect .shape,
+.btn__contect1 .shape {
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.btn__contect1 .shape {
+    padding: 0.7rem;
+    border: 2px solid var(--color-black);
+}
+
+.btn__left {
+    padding: 1rem;
+}
+
+/* change navbar styles on scroll using javascript */
+.window-scroll {
+    background: #517E64;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+/* Bagian Navbar */
+nav {
+    width: 100vw;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.nav__logo span {
+    color: #d7d255;
+}
+
+.nav__menu,
+.nav__right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav__right .border {
+    border: 3px solid var(--color-white);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.nav__right .border a {
+    font-size: 1.3rem;
+}
+
+/* Bagian Header */
+header {
+    height: 130vh;
+    background: hsla(157, 39%, 24%, 1);
+    background: linear-gradient(90deg, hsla(157, 39%, 24%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    position: relative;
+    color: var(--color-white);
+    padding-top: 4rem;
+    box-shadow: 0 5rem 5rem rgba(36, 0, 64, 0.2);
+}
+
+.header__up {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+}
+
+.header__left {
+    height: 100%;
+    padding: 2rem 0;
+}
+
+.header__left .border {
+    border-width: 3rem;
+}
+
+.header__left h1 {
+    line-height: 5rem;
+    letter-spacing: 2px;
+    margin: 2rem 0;
+}
+
+.header__down {
+    width: 95%;
+    height: 20rem;
+    background: var(--color-bg1);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding-top: 1.5rem;
+}
+
+.header__title {
+    margin-left: 1rem;
+}
+
+.header__title a {
+    font-size: 5rem;
+    padding-left: 4rem;
+}
+
+.header__catalog1,
+.header__catalog2 {
+    border: 0.5rem solid grey;
+}
+
+.header__destination {
+    margin: 5rem 1.5rem;
+    height: 6rem;
+    border-left: 0.6rem solid var(--color-white);
+}
+
+.header__destination h2,
+.header__destination h3 {
+    margin-left: 1rem;
+}
+
+
+/* Bagian Slogan */
+section#slogan {
+    margin-top: 10rem;
+}
+
+.slogan__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.slogan__left {
+    padding: 3rem;
+}
+
+.slogan__right {
+    margin: auto 0;
+}
+
+.slogan__right h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 4rem;
+    margin: 2rem 0;
+}
+
+.slogan__right p {
+    padding: 2rem 0;
+    font-weight: 400;
+}
+
+
+/* Bagian Service */
+#services {
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+.services__up {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.services__up h2 {
+    width: 25%;
+    font-size: 2.4rem;
+}
+
+.services__up p {
+    width: 45%;
+    margin: auto 0;
+}
+
+.services__down {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.service__card {
+    border: 1px solid var(--color-white);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    transition: 400ms ease;
+}
+
+.service__card:hover {
+    background: var(--color-bg1);
+    border: transparent;
+    cursor: pointer;
+}
+
+.card-Dates,
+.card__location {
+    display: flex;
+    align-items: center;
+}
+
+.card-Date h2 {
+    font-size: 2.5rem;
+}
+
+.card-MY {
+    margin-left: 0.8rem;
+    line-height: 1.3em;
+}
+
+.card__location {
+    border-bottom: 1px solid var(--color-white);
+}
+
+.card__location p {
+    margin-left: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.card__info {
+    margin: 1rem 0;
+}
+
+.card__info p {
+    font-size: 0.85rem;
+    margin: 1rem 0;
+}
+
+.card__info a {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Bagian Testimonial */
+#testimonials h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 0.5rem;
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+
+.testimonial {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    background-color: beige;
+}
+
+.testimonial .image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.testimonial .slide {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.slide {
+    padding: 2rem 0;
+}
+
+.slide p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 3rem;
+}
+
+.slide .quote-icon {
+    font-size: 2rem;
+    color: var(--color-bg1);
+}
+
+.testi__details {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.testi__details .job {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+/* Bagian Contact Us */
+#contact {
+    position: relative;
+    height: 50vh;
+    background: var(--color-light);
+    margin: 0;
+    padding: 1rem;
+}
+
+.contact__container {
+    margin-top: 2rem;
+}
+
+.contact__container h2 {
+    font-family: 'Rubik Marker Hatch', cursive;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.hiasan {
+    position: absolute;
+    height: 14rem;
+    width: 14rem;
+    left: 0;
+    bottom: -1rem;
+}
+
+.hiasan1 {
+    position: absolute;
+    height: 14rem;
+    width: 14rem;
+    right: 0;
+    bottom: -1rem;
+}
+
+.contact__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.contact-box {
+    background: #fff;
+    border-radius: 1rem;
+    border: 1px solid var(--color-primary);
+}
+
+.contact-box input[type="email"] {
+    margin-left: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0 2rem;
+}
+
+.contact-box input[type="submit"] {
+    background: var(--color-bg1);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+/* Bagian Footer */
+footer {
+    background: var(--color-bg2);
+    padding-top: 4rem;
+}
+
+footer a {
+    color: var(--color-white);
+    font-size: 0.9rem;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+footer h4 {
+    font-size: 1.3rem;
+    color: var(--color-white);
+}
+
+.footer__container>div h4 {
+    margin-bottom: 1.2rem;
+}
+
+.footer__sosials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.3rem;
+}
+
+.footer__sosials a {
+    font-size: 1.3rem;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--color-bg1);
+    color: var(--color-white);
+}
